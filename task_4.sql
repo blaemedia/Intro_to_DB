@@ -1,0 +1,20 @@
+-- Task 4: Print full description of books table
+-- Without using DESCRIBE or EXPLAIN statements
+
+USE alx_book_store;
+
+-- Get the full table structure from information_schema
+SELECT 
+    COLUMN_NAME AS 'Field',
+    COLUMN_TYPE AS 'Type',
+    IS_NULLABLE AS 'Null',
+    COLUMN_KEY AS 'Key',
+    COLUMN_DEFAULT AS 'Default',
+    EXTRA AS 'Extra'
+FROM 
+    INFORMATION_SCHEMA.COLUMNS 
+WHERE 
+    TABLE_SCHEMA = 'alx_book_store' 
+    AND TABLE_NAME = 'books'
+ORDER BY 
+    ORDINAL_POSITION;
