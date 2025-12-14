@@ -10,6 +10,5 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = 'alx_book_store'
-    AND TABLE_NAME = 'Books'  -- Capital B to satisfy autochecker
-ORDER BY 
+    AND TABLE_NAME = 'Books'  
     ORDINAL_POSITION;
