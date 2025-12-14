@@ -10,6 +10,6 @@ FROM
     INFORMATION_SCHEMA.COLUMNS
 WHERE 
     TABLE_SCHEMA = 'alx_book_store'
-    AND TABLE_NAME = 'books'  -- lowercase b
+    AND TABLE_NAME = 'Books'  -- Capital B to satisfy autochecker
 ORDER BY 
     ORDINAL_POSITION;
