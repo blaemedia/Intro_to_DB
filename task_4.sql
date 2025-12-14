@@ -3,7 +3,6 @@
 
 USE alx_book_store;
 
--- Get the full table structure from information_schema
 SELECT 
     COLUMN_NAME AS 'Field',
     COLUMN_TYPE AS 'Type',
