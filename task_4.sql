@@ -3,6 +3,10 @@
 
 USE alx_book_store;
 
+-- task_4.sql
+
+
+
 SELECT 
     COLUMN_NAME AS 'Field',
     COLUMN_TYPE AS 'Type',
@@ -17,3 +21,5 @@ WHERE
     AND TABLE_NAME = 'books'
 ORDER BY 
     ORDINAL_POSITION;
+
+DESCRIBE books;
